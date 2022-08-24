@@ -1,4 +1,4 @@
-# CS205 Spring 2017 Project: Parallel MCMC
+# Parallel MCMC
 
 Laith Alhussein, Nathaniel Burbank, Shawn Pan, Andrew Ross, and Rohan
 Thavarajah
