@@ -3,6 +3,11 @@
 Laith Alhussein, Nathaniel Burbank, Shawn Pan, Andrew Ross, and Rohan
 Thavarajah
 
+## NOTE
+A full description of our method, and our results, can be found on our website here: http://teleporting-parallel-mcmc.s3-website-us-east-1.amazonaws.com/
+
+What follows below is a slightly briefer description, without much results, of the porblem we are solving.
+
 ## Background
 
 Markov Chain Monte Carlo (MCMC) is a statistical method that allows us to draw
@@ -51,17 +56,7 @@ distribution itself). In this case, we actually have `T∞ = B+1`, since we can
 take one sample from infinitely many chains after burnin.
 
 Following this analysis, we can plot speedup, efficiency, and cost graphs for a
-number of MCMC algorithms on a number of different distributions:
-
-* _insert plot here, Tp vs. p_
-
-For this distribution (_insert math here_), the cost-optimal number of chains
-was **n**.
-
-However, when given a multimodal distribution that _x_ method of MCMC struggles
-to handle, we find that convergence takes an extremely long time:
-
-* _insert plot here?_
+number of MCMC algorithms on a number of different distributions. When we do so, we find that the cost-optimal number of chains was **n**. However, when given a multimodal distribution that _x_ method of MCMC struggles to handle, we find that convergence takes an extremely long time.
 
 In this case, rather than trying to speed up convergence by adding more
 parallel machines running the same unsuitable algorithm, we can parallelize the
@@ -113,12 +108,6 @@ To evaluate this method, we would determine if:
   simply allocating all nodes to one or the other
 - there is an ideal ratio / teleportation probability `\epsilon` for a given
   distribution `s` that determines how we should allocate our nodes
-
-## Implementation
-
-TODO
-
-## Evaluation
 
 ### Synthetic Data
 
